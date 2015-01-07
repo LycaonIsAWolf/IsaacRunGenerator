@@ -13,7 +13,7 @@ function getRun(){
 	var destination = destinations[Math.floor(Math.random() * destinations.length)];
 	var hardmode = (Math.floor((Math.random() * 2)) == 0) ? true : false;
 
-	var run_text = "You will be playing as " + character + ", going to " + destination + (hardmode ? " on normal mode" : " on hardmode") + ".";
+	var run_text = "You will be playing as <b>" + character + "</b>, going to <b>" + destination + (hardmode ? "</b> on <b>normal</b>" : "</b> on <b>hard</b>") + ".";
 
 	console.log(run_text);
 	$('#run-text').replaceWith('<div id="run-text">' + run_text + '</div>');
