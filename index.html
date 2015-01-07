@@ -7,28 +7,24 @@
 	
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
 	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
 
 	<!-- Optional theme -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
-
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 	
 	<!-- Latest compiled and minified JavaScript -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
 
-	<script src="snabbt.min.js"></script>
-	<script src="http://daniel-lundin.github.io/snabbt.js/randomColor.js"></script>
 
 
 </head>
 
-<body onload="getRun()">
+<body onload="getRun();">
 	<div class="jumbotron">
-		<div id="container">
-			<div id="surface"></div>
-		</div>
+	
 
 		<h1 class="text-center"><div id="run-text"></div></h1>
 
@@ -45,7 +41,9 @@
 			<span class="label label-info"><input id="char" checked="true" type="checkbox" name="character" value="???">     <label>???</label></span>
 			<span class="label label-info"><input id="char" checked="true" type="checkbox" name="character" value="Eden">    <label>Eden</label></span>
 			<span class="label label-info"><input id="char" checked="true" type="checkbox" name="character" value="The Lost"><label>The Lost</label></span>
+		
 			</p>
+			
 
 			<div class="container">
 				<button id="get-run" type="button" class="btn btn-primary btn-block btn-lg center-block" onclick="getRun();">Get New Run</button>

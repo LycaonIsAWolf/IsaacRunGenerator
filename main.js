@@ -1,6 +1,21 @@
 var destinations = ["The Chest", "The Dark Room"];
+var challenges = [];
+
+function getChallenges(){
+	$.getJSON('challenges.json', function(data){
+		challenges = [];
+		$.each(data, function(key, val){
+			for(var i = 0; i < val.length; i++){
+				challenges.push(val[i]);
+			}
+		})
+	});
+
+	console.log(challenges);
+}
 
 function getRun(){
+	getChallenges();
 	var active_chars = $('#characters :input:checkbox:checked').serializeArray();
 
 	var chars = [];
